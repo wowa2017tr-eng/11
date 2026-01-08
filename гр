@@ -1,0 +1,23 @@
+ mport matplotlib.pyplot as plt
+
+# Данные
+alpha = [10, 20, 30, 40, 50, 60]
+time_a = [2.08, 4.63, 7.87, 12.04, 17.65, 25.81]
+time_b = [0.75, 1.67, 2.86, 4.44, 6.67, 9.80]
+time_c = [3.33, 7.50, 13.04, 20.83, 32.26, 50.00]
+
+# Создание графика
+plt.figure(figsize=(10, 6))
+plt.plot(alpha, time_a, label='Вариант а', marker='o')
+plt.plot(alpha, time_b, label='Вариант б', marker='s')
+plt.plot(alpha, time_c, label='Вариант в', marker='D')
+
+# Оформление графика
+plt.title('Зависимость времени реакции от степени превращения')
+plt.xlabel('Степень превращения α, %')
+plt.ylabel('Время реакции t, мин')
+plt.grid(True)
+plt.legend()
+
+# Показ графика
+plt.show()
